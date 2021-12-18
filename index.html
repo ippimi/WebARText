@@ -33,7 +33,11 @@
         <a-entity
   geometry="primitive: plane; height: auto; width: auto"
   material="color: blue"
-  text="width: 4; value: This text will be 4 units wide."></a-entity>
+  text="width: 2; value: This text will be 4 units wide.The text component does not make use of all of the features of the three-bmfont-text library nor its sister modules.
+
+Bitmap font rendering limits you to the characters included in the font (Unicode this is not). SDF font rendering tends to produce smooth sharp edges though there are ways around this.
+
+The generated text is not suitable for raycaster intersection testing. For raycaster or cursor detection it is necessary to use a geometry component along with the text component."></a-entity>
         
      
        
